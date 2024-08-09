@@ -1,0 +1,36 @@
+//I am learning JavaScript Functions
+
+//Todays lesson  consists of understanding functions and how they operate
+
+
+//Function schema
+//Making functions saves blocks of code to be ran when we need it
+//INSTEAD of immediately running as the page loads
+function funcOne(){
+    console.log("Hey.");
+    console.log(5 + 7);
+};
+
+funcOne(); //This is how we call function code blocks to run. ex: funName();
+
+let numOne = 7;
+let numTwo = 3;
+
+//Scope: Whether it's a Global, Block, or Function Scope(Local scope)
+function addTwoNums(){
+    console.log(numOne + numTwo);
+};
+
+addTwoNums(); //Calling the function to run 
+
+
+//Arguments
+//This function is currently accepting two arguments
+function addTwoNumsV2(a,b){
+    console.log(a + b);      //No matter how many times you call this function, it will run.
+};
+
+//Sending data inside the arguments spots in functions
+addTwoNumsV2(numOne, numTwo);
+addTwoNumsV2(6, 10);
+addTwoNumsV2("Good", " Bye!");
