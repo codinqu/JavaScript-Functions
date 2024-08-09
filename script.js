@@ -1,6 +1,6 @@
 //I am learning JavaScript Functions
 
-//Todays lesson  consists of understanding functions and how they operate
+//Todays lesson consists of understanding functions and how they operate
 
 
 //Function schema
@@ -34,3 +34,37 @@ function addTwoNumsV2(a,b){
 addTwoNumsV2(numOne, numTwo);
 addTwoNumsV2(6, 10);
 addTwoNumsV2("Good", " Bye!");
+
+
+//Uppercase and Lowercases (names examples)
+function greetbyName(name){
+    console.log("Hello, " + name + "! Weclome to the site.")
+};
+greetbyName("b");
+
+function greetbyExcitment(name){
+    //Let variable is only being seen inside of this function
+    let upperCaseName = name.toUpperCase();
+    console.log(upperCaseName);
+
+    return upperCaseName //This is sending back the output of this function
+    //If you ever need a function to send back new data, you will need a return
+};
+let screamName = greetbyExcitment("b!");
+console.log(screamName);
+
+//upperCaseName
+//console.log(upperCaseName);
+console.log(`HIII ${screamName} IT"S ALMOST TIME TO SEE THE ALIEN MOVIE!`);
+
+
+
+
+//Making a sandwich example
+//This function shows DEFAULT values being added in the Arguments
+function makeSandwich(typeOfBread, typeOfMeat, typeOfSauce, typeOfVeggie = "N/A"){
+    console.log(`Bread: ${typeOfBread} Meat: ${typeOfMeat} Sauce: ${typeOfSauce}, Veggies: ${typeOfVeggie}`);
+}
+
+let bSandwich = makeSandwich("Flatbread", "Roast Beef", "Honey Mustard", "Tomato");
+let mikeSandwich = makeSandwich("White", "Chicken", "Buffalo");
