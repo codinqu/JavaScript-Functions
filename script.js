@@ -68,3 +68,70 @@ function makeSandwich(typeOfBread, typeOfMeat, typeOfSauce, typeOfVeggie = "N/A"
 let bSandwich = makeSandwich("Flatbread", "Roast Beef", "Honey Mustard", "Tomato");
 let mikeSandwich = makeSandwich("White", "Chicken", "Buffalo");
 
+
+
+
+//Function Questions and Problems
+
+//Problem One
+//Grade Calculator
+//Create a program that calculates the average grade from an array of grades
+//Determine the corresponding letter grade
+
+//TODO: Define an array containing a list of 5 grades
+//TODO: Create a function to calculate the average of the grades
+//TODO: Create another function to determine the letter grade based on the average
+//TODO: Use if-else statements inside the function to determine the letter grade
+
+//Output Results: Use console.log to display the average grade and the corresponding letter grade
+
+let grades = [35, 44, 79, 95, 50];
+
+console.log(`Grades Array: ${grades}`);
+
+//forEach() method will look through the array and add each element
+//sum is stored then divided by the length of the array to calc the average
+function averageGrade(Number){
+    let sum = 0;
+grades.forEach((Number) => {
+    sum += Number;
+});
+
+let average = sum / grades.length;
+console.log(`Grade Average ${average}`);
+
+return average;
+}//60.6 answer
+
+let numberAverage = averageGrade(grades);
+//This is allowing line 101 to show on the console
+
+//Letter Grade
+//100-90 A, 89-80 B, 79-70 C, 69-60 D, 59 and below is F
+function letterGrade(numberAverage){
+    for (let i = 0; i < grades.length; i++){
+        if (numberAverage >= 90){
+            console.log(`Letter grade based on average is A.`);
+        }
+        else if (numberAverage > 80){
+            console.log(`Letter grade based on average is B.`);
+        }
+        else if (numberAverage > 70){
+            console.log(`Letter grade based on average is C.`);
+        }
+        else if (numberAverage > 60){
+            console.log(`Letter grade based on average is D.`);
+        }
+        else if (numberAverage < 59){
+            console.log(`Letter grade based on average is F.`);
+        }
+    };
+};
+
+letterGrade(numberAverage);
+
+console.log(`Grade Average is 60.6 and Letter Grade based on average is D.`)
+
+
+//Problem Two
+//
