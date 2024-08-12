@@ -133,5 +133,68 @@ letterGrade(numberAverage);
 console.log(`Grade Average is 60.6 and Letter Grade based on average is D.`)
 
 
+
 //Problem Two
-//
+//! Bank Account Manager
+//? Create a program that allows a user to manage a simple bank account, including depositing, withdrawing, and checking the balance.
+ 
+//TODO Define Variables: Start with a balance variable.
+//TODO Create Functions: Create functions to deposit money, withdraw money, and check the balance.
+//TODO Use if-else Statements: Use if-else statements to ensure the withdrawal amount does not exceed the balance.
+//* Output Results: Use console.log to display the updated balance after each operation.
+ 
+
+
+
+
+
+
+
+
+//Problem Three
+//! Simple To-Do List
+//? Create a program that allows the user to add and display tasks in a to-do list.
+ 
+//TODO Define an Array: Define an array to store the tasks.
+//TODO Create Functions: Create functions to add a task and display the to-do list.
+//TODO Use if-else Statements and Loops: Use if-else statements and loops within the functions to handle the tasks.
+//* Output Results: Use console.log to display the to-do list after each operation.
+ 
+
+let taskToDo = [];
+
+function addATask(additionalTask){
+    taskToDo.push(additionalTask);
+    console.log(taskToDo);
+}
+
+addATask(`Laundry`);
+addATask(`Recovery run`);
+addATask(`Code some`);
+
+
+
+//Problem Four
+//! Temperature Converter
+//? Create a program that converts temperatures between Celsius, Fahrenheit, and Kelvin.
+ 
+//TODO Define Variables: Allow the user to input a temperature value and the unit they want to convert from.
+//TODO Create Functions: Create functions to convert between Celsius, Fahrenheit, and Kelvin.
+//? (Hint: There will be two arguements temperature value and unit letter (Celsius, Farenheit, Kelvin))
+//? ex. If I provide 25 and "C" I want the Kelvin and Farenheit temperature
+ 
+//* KelvinToCelsius conversion:
+//* kelvinNum - 273.15
+ 
+//* celsiusToKelvin:
+//* celsiusNum + 273.15
+ 
+//* fahrenheitToCelsius:
+//* (fahrenheit - 32) * 5/9
+ 
+//* celsiusToFahrenheit:
+//* (celsius * 9/5) + 32
+ 
+ 
+//TODO  Use if-else Statements: Use if-else statements to determine which conversion to perform based on the user's input.
+//* Output Results: Use console.log to display the converted temperature.
