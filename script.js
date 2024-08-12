@@ -59,7 +59,6 @@ console.log(`HIII ${screamName} IT"S ALMOST TIME TO SEE THE ALIEN MOVIE!`);
 
 
 
-
 //Making a sandwich example
 //This function shows DEFAULT values being added in the Arguments
 function makeSandwich(typeOfBread, typeOfMeat, typeOfSauce, typeOfVeggie = "N/A"){
@@ -68,3 +67,4 @@ function makeSandwich(typeOfBread, typeOfMeat, typeOfSauce, typeOfVeggie = "N/A"
 
 let bSandwich = makeSandwich("Flatbread", "Roast Beef", "Honey Mustard", "Tomato");
 let mikeSandwich = makeSandwich("White", "Chicken", "Buffalo");
+
