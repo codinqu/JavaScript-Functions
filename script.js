@@ -132,6 +132,8 @@ letterGrade(numberAverage);
 
 console.log(`Grade Average is 60.6 and Letter Grade based on average is D.`)
 
+//End problem one
+
 
 
 //Problem Two
@@ -143,7 +145,11 @@ console.log(`Grade Average is 60.6 and Letter Grade based on average is D.`)
 //TODO Use if-else Statements: Use if-else statements to ensure the withdrawal amount does not exceed the balance.
 //* Output Results: Use console.log to display the updated balance after each operation.
  
+let accountBalance = 700;
 
+function accountDeposit(){
+    
+}
 
 
 
@@ -198,3 +204,95 @@ addATask(`Code some`);
  
 //TODO  Use if-else Statements: Use if-else statements to determine which conversion to perform based on the user's input.
 //* Output Results: Use console.log to display the converted temperature.
+
+
+
+
+
+//Problem Five
+//Music Playlist Manager
+//Create a program that allows the user to manage a playlist of songs
+
+//TODO: Define an array to store the song titles
+//TODO: Create Functions to add a song, remove a song and display the playlist
+//Output Results: Use console.log to display the playlist after EACH OPERATION!
+
+
+let songTitles = [];
+//Empty array to add songs to
+
+//creating a function to add songs to array using .push method
+function addASong(additionalSongs){
+    songTitles.push(additionalSongs);
+    console.log(songTitles);
+}
+
+//console.log (line 222) additional songs array should now look roughly like: abstract, always on my mind, black magic woman, babylon
+addASong(`Abstract (Psychopomp)`);
+addASong(` Always On My Mind`);
+addASong(` Black Magic Woman`);
+addASong(` Babylon (Don't Let Me Fall)`);
+
+//creating a function to remove a song from the array or "playlist"
+function removeASong(deleteSong){
+    songTitles.splice(2, 1);
+    console.log(songTitles);
+}
+
+removeASong();
+//calling function so console.log (line 234) can show up on the console
+
+//displaying playlist on console
+console.log(`Playlist Displayed As: 
+    ${songTitles}`);
+
+//End of problem five
+
+
+
+//Problem Six
+//Daily Temperatures
+//Create a program that processes daily temp readings, calculates, the average temp and identifies the highest and lowest temps
+
+//TODO: Predefine an array of temperatures: Start with an array of numbers representing daily temps
+let temperatures = [72, 75, 79, 83, 78, 85, 90];
+console.log(`Daily Temperatures: ${temperatures}`);
+
+//TODO: Calculate the average temp: write a function to calculate the average of the temps
+function averageTemp(number){
+    let sum = 0;
+    temperatures.forEach((number) => { //using .forEach method again to get the average from all the numbers in the array
+        sum += number;
+    });
+
+    let avTempNum = sum / temperatures.length;
+    console.log(`Temperature Average: ${avTempNum.toFixed(2)}`);
+    //.toFixed to fix the number of decimal places (*insert number of decimal places you wish to have*)
+
+    return avTempNum; //returning the avtempnum
+    //80.29 answer 
+}
+
+let tempAverage = averageTemp(temperatures); //calling the function???? maybe??? 
+
+//TODO: Find the HIGHEST TEMP in the array by writing a function
+function tempLowAndHigh(){
+    let temperatures = [72, 75, 79, 83, 78, 85, 90];
+
+    let minTemp = Math.min(...temperatures);
+    let maxTemp = Math.max(...temperatures);
+    //Math.min and Math.max is looking through the array to find the maximum and the minimun element within the given array 
+
+    console.log(`Minimun Temperature is: ` + minTemp);
+    console.log(`Max Temperature is: ` + maxTemp);
+    //output the results for the max and min temps within the array 
+    // min answer: 72
+    // max answer: 90
+}
+
+tempLowAndHigh(); //calling the function
+//this will allow lines 281 and 282 to show up on the console 
+
+//End problem six
+
+
