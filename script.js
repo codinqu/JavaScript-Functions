@@ -144,12 +144,6 @@ console.log(`Grade Average is 60.6 and Letter Grade based on average is D.`)
 //TODO Create Functions: Create functions to deposit money, withdraw money, and check the balance.
 //TODO Use if-else Statements: Use if-else statements to ensure the withdrawal amount does not exceed the balance.
 //* Output Results: Use console.log to display the updated balance after each operation.
- 
-let accountBalance = 700;
-
-function accountDeposit(){
-    
-}
 
 
 
