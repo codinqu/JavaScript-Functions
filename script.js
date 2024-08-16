@@ -290,3 +290,54 @@ tempLowAndHigh(); //calling the function
 //End problem six
 
 
+// More function notes and practice from beginning!!!
+
+function add(){
+    console.log(2 + 2);
+}
+
+add();
+
+
+function addingTwoNums(leftNumber, rightNumber){
+    console.log(leftNumber + rightNumber);
+}
+
+addingTwoNums(2, 2);
+addingTwoNums(3 , 1);
+addingTwoNums(42, 2);
+
+
+function calArea(width, height){
+    return width * height;
+}
+//when to use return or not???
+//if you need the answer to be out of a function
+// RETURN IT
+
+// THE RETURN VALUE CAN BE STORED IN A VARIABLE TO USE LATER ON IF NEEDED
+
+let areaAnswer = calArea(4, 11);
+let areaAnswerTwo = calArea(444, 1);
+let areaAnswerThree = calArea(22, 2);
+
+console.log(areaAnswer);
+console.log(areaAnswerTwo);
+console.log(areaAnswerThree);
+
+
+
+function whichNumIsHigher(numOne, numTwo){
+        if (numOne > numTwo){
+            console.log(`In space no one can hear you scream.`);
+        }
+        else if (numTwo > numOne){
+            console.log(`Run.`);
+        }
+}
+
+whichNumIsHigher(14, 4);
+
+whichNumIsHigher(areaAnswer, areaAnswerTwo);
+// these variables are assigned to functions that RETURN numbers
+
